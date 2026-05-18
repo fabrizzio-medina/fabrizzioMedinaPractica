@@ -5,6 +5,7 @@ import dao.ScoreDAO;
 import mapa.Mapa;
 import modelo.Jugador;
 import score.Score;
+import ui.ScoreFrame;
 
 
 import java.util.List;
@@ -96,9 +97,11 @@ public class Juego {
                 }
                 break;
             case 3: // Mostrar tabla clasificaciones
-                tablaClasificacion.mostrar();
+                //tablaClasificacion.mostrar();
+                ScoreFrame scoreFrame = new ScoreFrame();
+                scoreFrame.setVisible(true);
+                scoreFrame.cargarData(tablaClasificacion.getMapaScore());
                 jugador = null;
-
                 break;
             case 4: //Salir
                 System.out.println("Gracias por jugar Nuestro juego - Dev. Fabrizzio");

@@ -1,0 +1,9 @@
+# Ignorar los binarios compilados por Java
+*.class
+
+# Ignorar la carpeta de compilación automática de Maven
+/target/
+
+# Ignorar la configuración local de IntelliJ
+/.idea/
+*.iml
